@@ -16,7 +16,7 @@ To set up and run the project locally, follow the instructions below:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/blood-cell-detection.git
+    git clone https://github.com/Narsireddy-Konapalli/blood-cell-detection.git
     cd blood-cell-detection
     ```
 
@@ -24,7 +24,7 @@ To set up and run the project locally, follow the instructions below:
 
     ```bash
     python -m venv venv
-    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+    venv\Scripts\activate  # For Windows
     ```
 
 3. Install the required dependencies:
@@ -38,16 +38,13 @@ To set up and run the project locally, follow the instructions below:
     ```txt
     streamlit
     torch
-    torchvision
     opencv-python
     pillow
     numpy
     matplotlib
     ```
 
-4. Download the pre-trained YOLO model for blood cell detection.
-
-    (Provide a link or instructions for the model if not included in the repository)
+4. The pre-trained YOLO model is included in the repository, so no need for separate download instructions.
 
 5. Start the Streamlit app:
 
@@ -70,20 +67,20 @@ To set up and run the project locally, follow the instructions below:
 1. Run the Streamlit app as described in the **Installation** section.
 2. Once the app is running, go to the provided local URL in your browser (typically `http://localhost:8501`).
 3. Upload an image containing blood cells (e.g., from a microscope).
-4. The app will display the detected cells with labels for Red Blood Cells (RBCs), White Blood Cells (WBCs), and Platelets, along with their count.
+4. The app will display the uploaded image with bounding boxes around the detected Red Blood Cells (RBCs), White Blood Cells (WBCs), and Platelets. The detection results are shown with labels.
 
 ## How It Works
 
 - The YOLO model is trained to detect blood cells in images.
 - The Streamlit app provides an interface for users to upload images.
 - The uploaded image is passed through the YOLO model, which detects and classifies RBCs, WBCs, and Platelets.
-- The output image is displayed with bounding boxes around the detected cells, and the count of each type is shown.
+- The output image displays bounding boxes around the detected cells, with labels indicating the type of cell.
 
 ## Deployment
 
 The project is deployed on Hugging Face Spaces for easy access and usage:
 
-[Blood Cell Detection on Hugging Face Spaces](https://huggingface.co/spaces/your-username/blood-cell-detection)
+[Blood Cell Detection on Hugging Face Spaces](https://huggingface.co/spaces/narsireddy/BloodAnalyzer)
 
 To deploy on your own Hugging Face Spaces:
 
@@ -91,19 +88,17 @@ To deploy on your own Hugging Face Spaces:
 2. Fork the repository or upload your project files to a new Space.
 3. Follow the Hugging Face documentation for deploying Streamlit apps.
 
-## Contributing
+## Interface
 
-If you'd like to contribute to this project:
+The model's interface allows users to:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -am 'Add new feature'`).
-4. Push to your branch (`git push origin feature-branch`).
-5. Create a pull request.
+- Upload an image of a blood sample.
+- Detect and classify Red Blood Cells (RBCs), White Blood Cells (WBCs), and Platelets in the image.
+- View the image with bounding boxes drawn around the detected cells, labeled with their respective types.
 
-## License
+Here’s how the interface looks:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+![Interface Screenshot](assets/screenshot.png)
 
 ## Acknowledgments
 
@@ -111,4 +106,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Streamlit for building the web app interface.
 - Hugging Face for hosting the deployment.
 - OpenCV and PyTorch for image processing and model training.
-
