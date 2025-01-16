@@ -1,4 +1,4 @@
-# Blood Cell Detection using YOLO and Streamlit
+# Blood Cell Detection using YOLO 
 
 This project uses a YOLO (You Only Look Once) model to detect and classify Red Blood Cells (RBCs), White Blood Cells (WBCs), and Platelets in images. The interface is built with Streamlit, providing users the ability to upload an image for detection. The project is deployed on Hugging Face Spaces for easy access.
 
