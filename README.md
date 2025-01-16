@@ -82,7 +82,7 @@ The model's interface allows users to:
 
 Here’s how the interface looks:
 
-![Interface Screenshot](assets/screenshot.png)
+![Image](https://github.com/user-attachments/assets/f3b0d44d-c0a6-4657-97ab-0e9908cacf24)
 
 ## Acknowledgments
 
