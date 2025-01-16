@@ -89,4 +89,4 @@ Here’s how the interface looks:
 - YOLO (You Only Look Once) for object detection.
 - Streamlit for building the web app interface.
 - Hugging Face for hosting the deployment.
-- OpenCV and PyTorch for image processing and model training.
+- OpenCV for image processing and model training.
