@@ -72,12 +72,6 @@ The project is deployed on Hugging Face Spaces for easy access and usage:
 
 [Blood Cell Detection on Hugging Face Spaces](https://huggingface.co/spaces/narsireddy/BloodAnalyzer)
 
-To deploy on your own Hugging Face Spaces:
-
-1. Create an account on Hugging Face (if you haven't already).
-2. Fork the repository or upload your project files to a new Space.
-3. Follow the Hugging Face documentation for deploying Streamlit apps.
-
 ## Interface
 
 The model's interface allows users to:
