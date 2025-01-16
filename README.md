@@ -52,16 +52,6 @@ To set up and run the project locally, follow the instructions below:
     streamlit run app.py
     ```
 
-### Requirements
-
-- Python 3.x
-- Streamlit
-- PyTorch
-- OpenCV
-- Pillow
-- NumPy
-- Matplotlib
-
 ## Usage
 
 1. Run the Streamlit app as described in the **Installation** section.
